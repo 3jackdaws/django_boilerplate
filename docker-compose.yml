@@ -5,10 +5,8 @@ services:
     build: .
     ports:
       - '80:80'
-        //change the leftmost '80' to the desired host port
     volumes:
-      - '.:/app'
-        //mount your local directory so that changes automatically appear in the docker container
+      - .:/app
     restart: unless-stopped
 
 
