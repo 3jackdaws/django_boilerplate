@@ -3,6 +3,8 @@ MAINTAINER              Ian Murphy <ian@isogen.net> #change this, obv
 
 RUN                     mkdir /app
 
+WORKDIR                 /app
+
 ADD                     . .
 
 RUN                     pip3 install -r requirements.txt
